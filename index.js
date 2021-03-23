@@ -24,9 +24,13 @@ Use getFinals to do the following:
 hint - you should be looking at the stage key inside of the objects
 */
 
-function getFinals(/* code here */) {
+function getFinals(data) {
    /* code here */
-}
+   return data.filter((data) => {
+       return data['Stage'].includes('Final');
+   })
+   }
+
 
 
 
